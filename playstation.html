@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataBlitz - PlayStation</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #0f244d;
+      color: #ffffff;
+    }
+
+    .navbar { background: #002a5e; }
+    .navbar-brand, .nav-link { color: #f7d358 !important; }
+
+    .section-title {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .console-name {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: #ffb84d;
+      font-weight: bold;
+    }
+
+    .console-img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+    }
+
+    .text-start p { margin-bottom: 0.8rem; }
+
+    footer {
+      background-color: #1a1a1a;
+      color: #f7d358;
+    }
+    footer a { color: #f7d358; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="proj.html">DataBlitz</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="proj.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Consoles</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="playstation.html">PlayStation (PS4/PS5)</a></li>
+            <li><a class="dropdown-item" href="nintendo.html">Nintendo Switch</a></li>
+            <li><a class="dropdown-item" href="xbox.html">Xbox</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="game.html">Games</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="container my-5">
+  <h2 class="section-title">PlayStation 4</h2>
+  <div class="row justify-content-center align-items-center mt-3">
+    <div class="col-md-6">
+      <img src="images/ps4.jpg" class="img-fluid console-img" alt="PS4 Console">
+    </div>
+    <div class="col-md-6 text-start">
+      <h3 class="console-name">PS4 Pro</h3>
+      <p>1TB Console with enhanced performance, 4K gaming support, and immersive graphics.</p>
+      <p>Price: ₱18,000</p>
+    </div>
+  </div>
+</section>
+
+<section class="container my-5">
+  <h2 class="section-title">PlayStation 5</h2>
+  <div class="row justify-content-center align-items-center mt-3">
+    <div class="col-md-6">
+      <img src="images/ps5.jpg" class="img-fluid console-img" alt="PS5 Console">
+    </div>
+    <div class="col-md-6 text-start">
+      <h3 class="console-name">PS5 Standard</h3>
+      <p>1TB Console, next-gen gaming, 4K graphics support.</p>
+      <p>Price: ₱28,000</p>
+    </div>
+  </div>
+</section>
+
+<footer class="mt-5 p-3 text-center">
+  <p>Developer: Maverick Manalaysay</p>
+  <p><a href="proj.html">Back to Home</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

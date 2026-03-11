@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataBlitz - Retro Gaming Store</title>
+
+  <!-- Bootstrap & Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">DataBlitz</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Consoles</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="playstation.html">PlayStation (PS4/PS5)</a></li>
+            <li><a class="dropdown-item" href="nintendo.html">Nintendo Switch</a></li>
+            <li><a class="dropdown-item" href="xbox.html">Xbox</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="game.html">Games</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero / Promotions -->
+<section id="home" class="container my-5">
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/Sony-PS5-Slim-or-Sony-PlayStation-5-Slim-price-and-specs-via-Revu-Philippines.jpg" class="d-block w-100 rounded" alt="PS5 Sale">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Big Sale on PS5!</h3>
+          <p>Grab the newest games and consoles today!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/1920x1080_WN_PR01162025.avif" class="d-block w-100 rounded" alt="Nintendo Switch Promotion">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Exclusive Nintendo Switch Titles!</h3>
+          <p>Limited stock available in stores.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <div class="text-center my-5">
+    <h2 class="retro-title">About DataBlitz</h2>
+    <p>DataBlitz is the premier gaming retailer in the Philippines, offering consoles, games, and accessories for all gamers!</p>
+  </div>
+</section>
+
+<!-- Products -->
+<section id="products" class="container my-5">
+  <h2 class="retro-title">Products</h2>
+  <p>Select a game from the dropdown to see available consoles:</p>
+  <div id="availableConsoles" class="d-flex justify-content-center gap-3 flex-wrap"></div>
+</section>
+
+<!-- Stores -->
+<section id="stores" class="container my-5">
+  <h2 class="retro-title">Visit Our Stores</h2>
+  <p>Find the nearest DataBlitz branch and experience gaming in person.</p>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="store-card text-center p-4">
+        <h4>SM North EDSA</h4>
+        <p>North EDSA, Quezon City <br> 10:00 AM – 9:00 PM</p>
+        <a href="https://maps.google.com" target="_blank" class="btn store-btn">View on Map</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="store-card text-center p-4">
+        <h4>SM Megamall</h4>
+        <p>Mandaluyong City <br> 10:00 AM – 9:00 PM</p>
+        <a href="https://maps.google.com" target="_blank" class="btn store-btn">View on Map</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="store-card text-center p-4">
+        <h4>SM Mall of Asia</h4>
+        <p>Pasay City <br> 10:00 AM – 9:00 PM</p>
+        <a href="https://maps.google.com" target="_blank" class="btn store-btn">View on Map</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="container text-center">
+  <h2 class="retro-title">Contact Us</h2>
+  <div class="contact-container">
+    <h3>Send Us a Message</h3>
+    <form>
+      <label>Email</label>
+      <input type="email" placeholder="Enter your email">
+      <label>Message</label>
+      <textarea rows="4" placeholder="Type your message here..."></textarea>
+      <button class="contact-btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>Sitemap | <a href="#home">Home</a> | <a href="#products">Products</a> | <a href="#stores">Stores</a> | <a href="#contact">Contact</a></p>
+  <p>Developer: Maverick Manalaysay</p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a.nav-link, .dropdown-item').forEach(anchor => {
+    anchor.addEventListener('click', function(e){
+      if(this.getAttribute('href').startsWith("#")){
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
